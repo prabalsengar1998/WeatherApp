@@ -25,7 +25,7 @@ app.post("/",function(req,res){
 
                 var imageUrl="http://openweathermap.org/img/wn/"+icon+"@2x.png"
 
-                res.write("<h1>desription: "+description+"</h1>")
+                res.write("<h1>desription: "+description+"</h1>")       
                 res.write("<h1>temperature: "+temperature+" c</h1>")
                 res.write("<img src="+imageUrl+">")
                 res.send()
@@ -33,9 +33,10 @@ app.post("/",function(req,res){
     })
 
 })
+const port=process.env.PORT||5000
 
-app.listen(5000,function(){
-    console.log(chalk.green.inverse("server is running"));
+app.listen(port,function(){
+    console.log(chalk.green.inverse("server is running on port"+port));
 })
 
 
