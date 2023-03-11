@@ -42,3 +42,10 @@ input {
 input:focus {
     outline: none;
 }
+.desc{
+    display: flex;
+}
+h1{
+    font-family: "Poppins", sans-serif;
+    color: #ffffff;
+}
