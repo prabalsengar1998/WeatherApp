@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="/weather.css">
+</head>
+<body>
+    <form id="form" action="/" method="post">
+        <input type="text" name="cityName" placeholder="Type your city">
+        <button id="button"type="submit">Search</button>
+    </form>
+        <span style="font-size: 4rem;">&#8595;</span>
+        <h1>Weather of <%=city %> is <%=temp %>c</h1>
+        <div class="desc">
+            <img src="<%=imageUrl %>">
+            <h1><%=description %></h1>
+            <img src="<%=imageUrl %>">
+        </div>
+   
+</body>
+</html>
